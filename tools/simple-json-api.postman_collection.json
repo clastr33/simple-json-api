@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "e808148e-87f0-4398-a4ca-6830eb0cc545",
+		"name": "simple-json-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user - C",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"user1_Name\",\r\n    \"last_name\": \"user1_LastName\",\r\n    \"email\": \"user1@email.lt\",\r\n    \"password\": \"p1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://simple-json-api.test/api/users",
+					"protocol": "http",
+					"host": [
+						"simple-json-api",
+						"test"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - R",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://simple-json-api.test/api/users",
+					"protocol": "http",
+					"host": [
+						"simple-json-api",
+						"test"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - U (put)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://simple-json-api.test/api/users/1",
+					"protocol": "http",
+					"host": [
+						"simple-json-api",
+						"test"
+					],
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user - D",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://simple-json-api.test/api/users/3",
+					"protocol": "http",
+					"host": [
+						"simple-json-api",
+						"test"
+					],
+					"path": [
+						"api",
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user_details - C",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\": 1,\r\n    \"address\": \"Address1, Vilnius, Lithuania\",\r\n    \"email\": \"user1@email.lt\",\r\n    \"password\": \"p1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://simple-json-api.test/api/user_details",
+					"protocol": "http",
+					"host": [
+						"simple-json-api",
+						"test"
+					],
+					"path": [
+						"api",
+						"user_details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
